@@ -72,6 +72,166 @@ h4{
   padding-top: 10px;
 }
 
+/* Nav & Overlay */
+
+.knoware-navbar{
+  font-family: 'Prompt', sans-serif;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  padding: 8px 30px;
+  box-sizing: border-box;
+  background: #0d0d0d;
+  color: #fff;
+  font-weight: 200;
+  position: fixed;
+  z-index: 999;
+}
+
+.knoware-navbar a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.knoware-nav-logo{
+  height: 32px;
+  width: auto;
+  z-index: 3;
+  position: relative;
+}
+
+.knoware-mobile{
+  display: none;
+}
+
+.knoware-nav-wrapper{
+  font-size: 15px;
+  padding-top: 7px;
+  float: right;
+}
+
+.knoware-nav-wrapper > ul{
+  list-style: none;
+  display: inline-block;
+}
+
+.knoware-nav-wrapper ul li{
+  display: inline-block;
+}
+
+.knoware-nav > li{
+  padding-right: 30px;
+  vertical-align: middle;
+}
+
+.knoware-nav > li:last-of-type{
+  padding-right: 35px;
+}
+
+.knoware-nav-social > li{
+  padding-right: 35px;
+  vertical-align: middle;
+}
+
+.knoware-nav-social > li:last-of-type{
+  padding-right: 0;
+}
+
+.knoware-nav-social > li > span{
+  font-size: 30px;
+}
+
+/* Mobile Overlay */
+
+.knoware-overlay{
+  font-family: 'Prompt', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #0d0d0d;
+  z-index: 4;
+  color: #fff;
+  font-weight: 200;
+  position: fixed;
+  opacity: 0;
+  transform: translate3d(0,120%,0);
+  transition: opacity .5s ,transform .9s;
+}
+
+.knoware-overlay-active{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition: opacity .5s ,transform .9s;
+}
+
+.knoware-mobile-nav{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+
+.knoware-mobile-nav > li{
+  font-size: 1.5em;
+  line-height: 3em;
+  text-align: center;
+}
+
+.knoware-mobile-nav a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.knoware-mobile-close{
+  font-size: 30px;
+  position: absolute;
+  top: 1rem; right: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+  .knoware-navbar{
+    padding: 4px 0;
+  }
+
+  .knoware-nav-logo{
+    height: 30px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .knoware-nav-wrapper{
+    display: none;
+  }
+
+  .knoware-mobile{
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .knoware-mobile h3{
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
+    float: left;
+    color: #fff;
+    margin: 0 0 0 0;
+    padding-top: 3px;
+  }
+
+  .knoware-mobile span{
+    font-size: 20px;
+    float: right;
+    color: #fff;
+    margin: 0 0 0 0;
+  }
+}
+
 /* End of typography */
 
 .mobile {
